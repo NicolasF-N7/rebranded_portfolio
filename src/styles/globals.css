@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.menuRendered {
+  opacity: 1;
+}
+
+.menuRendered li {
+  @apply border-gray-600 w-full;
+  transform: translateX(0);
+  opacity: 1;
+}
