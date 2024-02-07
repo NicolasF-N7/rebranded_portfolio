@@ -12,12 +12,12 @@ function Hero() {
           Je crée des <span className="heroShiny1 text-sunglow">sites web</span> pour votre{" "}
           <span className="heroShiny2 text-sunglow">entreprise... commerce... startup</span>.
           <img
-            className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px] opacity-40"
+            className="sqD w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px] opacity-40"
             style={{ animationDelay: "0.1s"}}
             src="/hero-icons/cart.svg"
           />
           <img
-            className="sqD squiggle-hero-nextjs hidden top-[75px] right-0 w-11 opacity-40"
+            className="sqD hidden top-[75px] right-0 w-11 opacity-40"
             style={{ animationDelay: "0.2s" }}
             src="/hero-icons/nextjs.svg"
           />
