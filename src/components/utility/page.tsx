@@ -6,8 +6,8 @@ import React, { ReactChildren } from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   const pageTitle = `${
-    currentPage === "Services"
-      ? "Nicolas Foin - Services de développeur web fullstack"
+    currentPage === "Accueil"
+      ? "Nicolas Foin - Développeur web fullstack"
       : `${currentPage} - Nicolas Foin`
   }`;
   return (
