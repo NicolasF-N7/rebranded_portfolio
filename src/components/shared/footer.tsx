@@ -42,7 +42,7 @@ function Footer() {
         })}
       </div>
 
-      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
+      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-zomp">
         <div className="flex flex-col items-center justify-center ">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             Réalisé avec{" "}

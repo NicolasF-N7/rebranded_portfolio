@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menuRendered li {
-  @apply border-gray-600 w-full;
+  @apply w-full;
   transform: translateX(0);
   opacity: 1;
 }
