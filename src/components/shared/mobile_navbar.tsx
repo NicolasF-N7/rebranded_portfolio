@@ -7,8 +7,6 @@ import { routes } from "@/data/shared";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMenuMounted, setIsMenuMounted] = useState(true);
-  const [isMenuRendered, setIsMenuRendered] = useState(true);
   /*const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
     isMenuOpen,
     {
@@ -36,7 +34,7 @@ export default function MobileNavbar() {
   return (
     <nav>
       <div
-        className={`w-full justify-between flex items-center ${isMenuRendered && 'bg-bg'} p-5`}
+        className={`w-full justify-between flex items-center ${isMenuOpen && 'bg-bg'} p-5`}
         style={{ zIndex: 101 }}>
 
         <li className="list-none font-bold text-lg">
@@ -58,10 +56,10 @@ export default function MobileNavbar() {
           <CrossIcon data-hide={!isMenuOpen} />
         </button>
       </div>
-      {isMenuMounted && (
+      {isMenuOpen && (
         <ul
           className={`menu flex flex-col absolute bg-bg
-            ${isMenuRendered && "menuRendered"}`}>
+            ${isMenuOpen && "menuRendered"}`}>
 
           {routes.map((item, index) => {
             return (

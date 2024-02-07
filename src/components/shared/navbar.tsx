@@ -11,11 +11,19 @@ function Navbar({ currentPage } : {currentPage: string}) {
             <img
               className="mr-2 scale-90 transform hover:scale-100 transition-transform duration-500"
               src="/favicon/favicon-180.png"
-              width="80"
-            />
-            {"Nicolas Foin".split("").map((letter, index) => {
+              width="80"/>
+
+            {"Nicolas".split("").map((letter, index) => {
               return (
-                <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
+                <span key={index} className="hover:text-sunglow hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
+                  {letter}
+                </span>
+              );
+            })}
+            &nbsp;
+            {"Foin".split("").map((letter, index) => {
+              return (
+                <span key={index} className="hover:text-sunglow hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
                   {letter}
                 </span>
               );
