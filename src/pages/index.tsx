@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "@/components/services/hero";
 import ServiceSection from "@/components/services/services_section";
 import CallToAction from "@/components/services/call_to_action";
+import Skills from "@/components/services/skills";
 import Page from "@/components/utility/page";
 
 export default function Home() {
@@ -12,8 +13,8 @@ export default function Home() {
       <div className="mt-0 sm:mt-24 space-y-32">
         <ServiceSection />
         <CallToAction />
-        {/*<Skills />
-        <Testimonials />*/}
+        <Skills />
+        {/*<Testimonials />*/}
         {/* <Posts allPosts={allPosts} /> */}
       </div>
       {/*<CTA />*/}
