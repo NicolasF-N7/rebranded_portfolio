@@ -25,7 +25,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 8px;
-  background: transparent;
+  background: theme('colors.charcoal');
 }
 
 body::-webkit-scrollbar-track {
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff2;
+  background-color: theme('colors.softOlivine');
   backdrop-filter: blur(5px);
   border-radius: 10px;
 }
@@ -95,6 +95,75 @@ body::-webkit-scrollbar-thumb {
   @apply absolute z-[-10];
 }
 
+/*============== vibrating button ==============*/
+@keyframes vibrate {
+  0% {
+    transform: rotateZ(0deg) ;
+  }
+  25% {
+    transform: rotateZ(3deg) ;
+  }
+  50% {
+    transform: rotateZ(0deg) ;
+  }
+  75% {
+    transform: rotateZ(-3deg) ;
+  }
+  100% {
+    transform: rotateZ(0deg) ;
+  }
+}
+
+@keyframes wave {
+  
+  0% {
+    transform: rotateZ(3deg) translateY(0px);
+  }
+  12% {
+    transform: rotateZ(3deg) translateY(5px);
+  }
+  25% {
+    transform: rotateZ(0deg) translateY(5px);
+  }
+  37% {
+    transform: rotateZ(-3deg) translateY(5px);
+  }
+  50% {
+    transform: rotateZ(-3deg) translateY(0px);
+  }
+  62% {
+    transform: rotateZ(-3deg) translateY(-5px);
+  }
+  75% {
+    transform: rotateZ(0deg) translateY(-5px);
+  }
+  88% {
+    transform: rotateZ(3deg) translateY(-5px);
+  }
+  100% {
+    transform: rotateZ(3deg) translateY(0px);
+  }
+}
+
+.wavyButton:hover{
+  animation: wave 0.3s infinite ease-in-out;
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.growingButton{
+  animation: growShrink 0.5s infinite ease-in-out;
+}
 
 /*==================Horiz scroll hint================*/
 @keyframes horizFloat {

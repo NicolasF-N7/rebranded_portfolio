@@ -34,7 +34,7 @@ export default function MobileNavbar() {
   return (
     <nav>
       <div
-        className={`w-full justify-between flex items-center ${isMenuOpen && 'bg-bg'} p-5`}
+        className={`w-full justify-between flex items-center ${isMenuOpen && 'bg-menu-bg'} p-5`}
         style={{ zIndex: 101 }}>
 
         <li className="list-none font-bold text-lg">
@@ -58,13 +58,13 @@ export default function MobileNavbar() {
       </div>
       {isMenuOpen && (
         <ul
-          className={`menu flex flex-col absolute bg-bg
+          className={`menu flex flex-col absolute bg-menu-bg
             ${isMenuOpen && "menuRendered"}`}>
 
           {routes.map((item, index) => {
             return (
               <li
-                className="w-full border-b border-zomp text-gray-100 text-sm font-semibold"
+                className="w-full border-b border-zomp text-charcoal text-sm font-semibold"
                 style={{ transitionDelay: `${150 + index * 25}ms` }}
                 key={index}>
 
@@ -89,7 +89,7 @@ type menuProps = {
 function MenuIcon(props : menuProps) {
   return (
     <svg
-      className="h-5 w-5 absolute text-gray-100"
+      className="h-5 w-5 absolute text-charcoal"
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -117,7 +117,7 @@ function MenuIcon(props : menuProps) {
 function CrossIcon(props : menuProps) {
   return (
     <svg
-      className="h-5 w-5 absolute text-gray-100"
+      className="h-5 w-5 absolute text-charcoal"
       viewBox="0 0 24 24"
       width="24"
       height="24"

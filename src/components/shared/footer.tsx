@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="flex flex-col w-screen px-5 py-10 border-t border-zomp z-5 bg-bg">
+    <footer className="flex flex-col w-screen px-5 py-10 border-t-2 border-pumpkin in z-5 bg-charcoal">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
         {footer_columns.map((item, index) => {
           return (
@@ -42,7 +42,7 @@ function Footer() {
         })}
       </div>
 
-      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-zomp">
+      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t-2 border-pumpkin">
         <div className="flex flex-col items-center justify-center ">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             Réalisé avec{" "}

@@ -7,7 +7,7 @@ function Navbar({ currentPage } : {currentPage: string}) {
     <nav className="flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
-          <span className="font-black text-xl flex items-center">
+          <span className="text-charcoal text-xl flex items-center">
             <img
               className="mr-2 scale-90 transform hover:scale-100 transition-transform duration-500"
               src="/favicon/favicon-180.png"
@@ -36,7 +36,7 @@ function Navbar({ currentPage } : {currentPage: string}) {
           return (
             <li
               key={index}
-              className={`list-none text-white ${
+              className={`list-none text-charcoal ${
                 currentPage === item.title
                   ? "opacity-100"
                   : "opacity-40 hover:opacity-100 transition-opacity"

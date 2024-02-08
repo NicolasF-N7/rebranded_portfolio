@@ -19,7 +19,7 @@ function portfolio() {
       currentPage="Portfolio"
       meta={{ title: "Portfolio", desc: "Mes précédents projets de développement web" }}>
 
-      
+      <h1> mes proj</h1>
 
       <div className="mt-6 portfolio-swiper-container">
         <div className="scrollHint flex flex-col items-center">
@@ -45,7 +45,7 @@ function portfolio() {
               limitProgress: 2,
               prev: {
                   shadow: true,
-                  scale: 0.7,
+                  scale: 0.5,
                   origin: 'left center',
                   translate: ['-5%', 0, -10],
                   rotate: [0, 0, 0],
@@ -61,7 +61,7 @@ function portfolio() {
             }}>
 
             {portfolio_proj_data.map((project, index) => (
-              <SwiperSlide className="bg-sunglow rounded portfolio-slides min-h-[60vh]" key={`portfolio-project-${index}`}>
+              <SwiperSlide className="bg-project-slide-bg rounded portfolio-slides min-h-[60vh]" key={`portfolio-project-${index}`}>
                 <div className="my-auto h-full">
                   <PortfolioSlide project_data={project} />
                 </div>
