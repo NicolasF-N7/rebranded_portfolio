@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { gsap } from 'gsap/dist/gsap';
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // Components & sections
@@ -14,18 +14,18 @@ import Page from "@/components/utility/page";
 
 
 export default function Home() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     let st = ScrollTrigger.create({
-      trigger: ".trigger",
-      pin: ".pin",
-      start: "bottom center",
-      end: "+=500",
+      trigger: ".firstCTAButton",
+      pin: true,
+      start: "bottom bottom",
+      end: "+=300px",
       markers: "true",
     });
     
-  })
+  }, []);
 
   return (
     <Page currentPage="Accueil" meta={{ desc: "Je suis Nicolas Foin, je crée des sites web pour les PME/TPE, commerces et startups" }}>
