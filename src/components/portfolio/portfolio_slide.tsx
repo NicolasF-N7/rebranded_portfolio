@@ -54,7 +54,7 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
               {/*Tech stack + github*/}
               <div className="lg:mt-6 flex flex-wrap items-start">
                 {project_data.tech_stack.map((techno, index) => (
-                  <span className="text-xs text-charcoal font-semibold p-2 rounded-md mr-2 mb-2 bg-olivine whitespace-no-wrap">{techno}</span>
+                  <div className="text-xs text-black font-semibold p-2 rounded-md mr-2 mb-2 bg-zomp hover:bg-olivine whitespace-no-wrap">{techno}</div>
                 ))}
 
 
@@ -71,7 +71,7 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
               </div>
 
               {/*Description*/}
-              <div className="p-4 lg:px-8 bg-softZomp text-black">
+              <div className="p-4 lg:px-8 bg-charcoal text-white">
                 <h2 className="text-center font-bold text-xl">Le projet</h2>
                 <p className="text-left">{project_data.proj_desc}</p>
               </div>
