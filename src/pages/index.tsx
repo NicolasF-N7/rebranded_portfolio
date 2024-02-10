@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { gsap } from 'gsap/dist/gsap';
+import { gsap } from 'gsap';
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -22,7 +22,7 @@ export default function Home() {
       pin: true,
       start: "bottom bottom",
       end: "+=300px",
-      markers: "true",
+      markers: true,
     });
     
   }, []);
