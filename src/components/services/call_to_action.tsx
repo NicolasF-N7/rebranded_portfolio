@@ -12,22 +12,25 @@ function CallToAction() {
         </div>
 
         {/*Wavy animation button for large screens (not phone)*/}
-        <div className="mt-12 hidden lg:block wavyButton">
-          <Link href="/contact">
-            <div className="font-bold px-16 py-6 bg-charcoal border-2 border-white text-white hover:bg-zomp transition-colors">
-              <p>Contactez moi</p>
-            </div>
-          </Link>
+        <div className="firstCTAButton mt-12">
+          <div className="hidden lg:block wavyButton ">
+            <Link href="/contact">
+              <div className="font-bold px-16 py-6 bg-charcoal border-2 border-white text-white hover:bg-zomp transition-colors">
+                <p>Contactez moi</p>
+              </div>
+            </Link>
+          </div>
+
+          {/*No animation button for mobile*/}
+          <div className="lg:hidden growingButton">
+            <Link href="/contact">
+              <div className="font-bold px-16 py-6 bg-charcoal border-2 border-white text-white hover:bg-zomp transition-colors">
+                <p>Contactez moi</p>
+              </div>
+            </Link>
+          </div>
         </div>
 
-        {/*No animation button for mobile*/}
-        <div className="mt-12 lg:hidden growingButton firstCTAButton">
-          <Link href="/contact">
-            <div className="font-bold px-16 py-6 bg-charcoal border-2 border-white text-white hover:bg-zomp transition-colors">
-              <p>Contactez moi</p>
-            </div>
-          </Link>
-        </div>
       </div>
     </>
   );

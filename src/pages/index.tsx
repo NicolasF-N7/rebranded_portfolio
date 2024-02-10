@@ -17,13 +17,21 @@ export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    let st = ScrollTrigger.create({
-      trigger: ".firstCTAButton",
-      pin: true,
-      start: "bottom bottom",
-      end: "+=300px",
-      markers: true,
+    let ctx = gsap.context(() => {
+  
+      ScrollTrigger.create({
+        trigger: ".firstCTAButton",
+        pin: ".pinnedServicesAndCTA",
+        start: "bottom bottom",
+        end: "+=300",
+        scrub: 1,
+        markers: true,
+      });
     });
+
+    return () => {
+      ctx.revert();
+    }
     
   }, []);
 
@@ -31,13 +39,17 @@ export default function Home() {
     <Page currentPage="Accueil" meta={{ desc: "Je suis Nicolas Foin, je crée des sites web pour les PME/TPE, commerces et startups" }}>
       <Hero />
       <div className="mt-0 sm:mt-24 space-y-32">
-        <div className="">
-          <ServiceSection />
-        </div>
 
-        <div className="trigger pin">
-          <CallToAction />
+        <div className="pinnedServicesAndCTA"> 
+          <div className="">
+            <ServiceSection />
+          </div>
+
+          <div className="">
+            <CallToAction />
+          </div>
         </div>
+        
         
         <Skills />
         {/*<Testimonials />*/}
