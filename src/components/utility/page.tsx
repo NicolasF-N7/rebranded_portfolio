@@ -18,6 +18,10 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
       <Head>
         <title>{pageTitle}</title>
 
+        {/* Google adsense tag */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850313560784722"
+        crossOrigin="anonymous"></script>
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
