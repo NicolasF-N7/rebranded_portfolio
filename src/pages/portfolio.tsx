@@ -1,8 +1,7 @@
 import React from "react";
 import Page from "@/components/utility/page";
-import { portfolio_proj_data } from '@/data/projects_data'
-
-import PortfolioSlide from '@/components/portfolio/portfolio_slide'
+import { portfolio_proj_data } from '@/data/projects_data';
+import PortfolioSlide from '@/components/portfolio/portfolio_slide';
 import { PiHandSwipeLeftBold } from "react-icons/pi";// horizontal scroll icon as hint for user
 
 import { Swiper, SwiperSlide, SwiperRef, SwiperClass } from 'swiper/react';
