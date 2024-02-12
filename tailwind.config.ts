@@ -26,6 +26,7 @@ const config: Config = {
         'zomp-rgb': '97, 155, 138',
 
         'softSunglow': '#fff9cb',
+        'curvedBackground': '#f2b004',
         'softOlivine': '#A1C18161',
         'softZomp': '#619B8A61',
 

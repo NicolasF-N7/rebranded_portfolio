@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { gsap } from 'gsap';
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // Components & sections
@@ -23,9 +23,7 @@ export default function Home() {
         trigger: ".firstCTAButton",
         pin: ".pinnedServicesAndCTA",
         start: "bottom bottom",
-        end: "+=300",
-        scrub: 1,
-        markers: true,
+        end: "+=900",
       });
     });
 
@@ -38,20 +36,23 @@ export default function Home() {
   return (
     <Page currentPage="Accueil" meta={{ desc: "Je suis Nicolas Foin, je crée des sites web pour les PME/TPE, commerces et startups" }}>
       <Hero />
-      <div className="mt-0 sm:mt-24 space-y-32">
-
-        <div className="pinnedServicesAndCTA"> 
-          <div className="">
-            <ServiceSection />
-          </div>
-
-          <div className="">
-            <CallToAction />
+      <div className=" mt-0 sm:mt-24 space-y-32 ">
+        {/* First half: Services + CTA */}
+        <div className="curvedSeparatorContainer">
+          <div className="customCurvedSeparator h-[150vh] mt-[1400px] lg:mt-[750px] bg-curvedBackground">
           </div>
         </div>
         
+        <div className="pinnedServicesAndCTA"> 
+          <ServiceSection />
+          <CallToAction />
+        </div>
         
-        <Skills />
+        {/* Second half: Skills + Reco + CTA */}
+        <div className="">
+          <Skills />
+        </div>
+        
         {/*<Testimonials />*/}
         {/* <Posts allPosts={allPosts} /> */}
       </div>
