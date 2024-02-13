@@ -8,7 +8,7 @@ function CallToAction() {
         <div className="flex flex-col sm:flex-row w-full justify-center">
           <div className="mt-4 mb-8 mr-4 border-t-4 border-charcoal w-full hidden sm:block"></div>
           <p className="w-full font-bold text-2xl md:text-3xl text-charcoal whitespace-nowrap">Discutons de vos besoins !</p>
-          <div className="mt-4 ml-4 ml-0 sm:ml-4 border-t-4 border-charcoal w-full "></div>
+          <div className="mt-4 ml-0 sm:ml-4 border-t-4 border-charcoal w-full "></div>
         </div>
 
         {/*Wavy animation button for large screens (not phone)*/}

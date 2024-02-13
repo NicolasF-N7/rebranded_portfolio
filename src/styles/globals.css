@@ -114,8 +114,14 @@ body::-webkit-scrollbar-thumb {
   left: -50%;
   width: 200%;
   z-index: -1;
-  border-top-left-radius: 50% 37%;
-  border-top-right-radius: 50% 37%;
+  border-top-left-radius: 50% 25%;
+  border-top-right-radius: 50% 25%;
+}
+
+/* ====Technologies==== */
+.skillWrapper{
+  position: relative;
+  right: -100%;
 }
 
 
