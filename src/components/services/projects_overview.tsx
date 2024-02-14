@@ -1,8 +1,7 @@
 import React from "react";
 import Link from 'next/link';
-import { gsap } from 'gsap';
-import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import {ProjectCard} from '@/components/services/project_card'
+import { portfolio_proj_data } from '@/data/projects_data'
 
 
 function ProjectsOverview() {
@@ -25,13 +24,9 @@ function ProjectsOverview() {
 
         {/* Content */}
         <div className="flex flex-row justify-center items-center h-[35em]">
-          <div className="h-full w-[25%] bg-charcoal mr-8">
-          </div>
-          <div className="h-full w-[25%] bg-charcoal mr-8">
-          </div>
-          <div className="h-full w-[25%] bg-charcoal">
-          </div>
-
+          <ProjectCard project={portfolio_proj_data[0]}/>
+          <ProjectCard project={portfolio_proj_data[1]}/>
+          <ProjectCard project={portfolio_proj_data[3]}/>
         </div>
         
         
