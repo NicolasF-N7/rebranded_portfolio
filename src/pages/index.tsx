@@ -16,6 +16,16 @@ import Page from "@/components/utility/page";
 
 export default function Home() {
   useEffect(() => {
+    // Calculus for technologies scroll distance
+    const technoWrapper = document.querySelector('.skillWrapper');
+    let technoWrapperWidth = 0;
+    if(technoWrapper){
+      technoWrapperWidth = technoWrapper.offsetWidth;
+    }
+    const windowWidth = window.innerWidth;
+    const technoScrollAmount = technoWrapperWidth + windowWidth;
+
+
     gsap.registerPlugin(ScrollTrigger);
 
     let ctx = gsap.context(() => {
@@ -31,7 +41,7 @@ export default function Home() {
         }
       })// Create timeline, when pin finish: .to horiz scroll
       .to(".skillWrapper", {
-        x: -500,
+        x: -technoScrollAmount,
         scrollTrigger: {
           trigger: '.skillWrapper',
           scrub: true,
