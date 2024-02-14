@@ -17,7 +17,7 @@ import Page from "@/components/utility/page";
 export default function Home() {
   useEffect(() => {
     // Calculus for technologies scroll distance
-    const technoWrapper = document.querySelector('.skillWrapper');
+    const technoWrapper = document.querySelector('.skillWrapper') as HTMLElement;
     let technoWrapperWidth = 0;
     if(technoWrapper){
       technoWrapperWidth = technoWrapper.offsetWidth;
