@@ -4,7 +4,6 @@ import Image from 'next/image';
 import {technologies_logo} from '@/data/technologies';
 
 function Skills() {
-  console.log(technologies_logo)
   return (
     <>
       <div className="">
@@ -23,7 +22,7 @@ function Skills() {
         {/* Weird behavior with items-center for the flex */}
         <div className="skillWrapper m-2 w-[150%] flex flex-row justify-between">
           {technologies_logo.map((techno, index) => (
-            <div className="p-8 rounded-full bg-white mr-8 h-[10em] w-[10em] flex-shrink-0 flex items-center">
+            <div className="p-8 rounded-full bg-white ml-4 mr-4 h-[10em] w-[10em] flex-shrink-0 flex items-center">
               <Image
                 className=""
                 height="128"

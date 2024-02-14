@@ -23,7 +23,7 @@ export default function Home() {
       technoWrapperWidth = technoWrapper.offsetWidth;
     }
     const windowWidth = window.innerWidth;
-    const technoScrollAmount = technoWrapperWidth + windowWidth;
+    const technoScrollAmount = technoWrapperWidth;
 
 
     gsap.registerPlugin(ScrollTrigger);
@@ -44,9 +44,9 @@ export default function Home() {
         x: -technoScrollAmount,
         scrollTrigger: {
           trigger: '.skillWrapper',
-          scrub: true,
-          start: 'top bottom',
-          end: 'bottom top',
+          scrub: 1,
+          start: 'top 80%',
+          end: 'bottom 30%',
           markers: true,
         }
       });
