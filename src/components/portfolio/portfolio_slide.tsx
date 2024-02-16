@@ -15,7 +15,8 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
   return (
       <>
         <div className="flex-col p-4 lg:p-8 pb-0 h-full">
-          <h2 className="text-center text-black font-bold text-xl mb-4">{project_data.title}</h2>
+          {/* Title */}
+          <h2 className="text-center text-black font-bold text-xl mb-4">{project_data.title} - {project_data.project_recipient}</h2>
 
           <div className="flex lg:flex-row flex-col items-center h-[90%] lg:mt-16">
           {/*Screenshots swiper*/}

@@ -11,7 +11,7 @@ function Skills() {
           {/* Left separator */}
           <div className="mt-4 mb-8 mr-4 border-t-4 border-charcoal w-full hidden sm:block"></div>
           
-          <div className="w-full text-charcoal font-bold text-2xl md:text-3xl whitespace-nowrap">
+          <div className="w-full mb-12 text-charcoal font-bold text-2xl md:text-3xl whitespace-nowrap">
           Technologies maitrisées
           </div>
 

@@ -28,7 +28,7 @@ function Hero() {
           />
           <img
             className="sqD w-[20%] opacity-40 bottom-[-130px] sm:bottom-[-135%] right-[30%]"
-            style={{ animationDelay: "0.6s" }}
+            style={{ animationDelay: "1.0s" }}
             src="/hero-icons/store.svg"
           />
           <img
