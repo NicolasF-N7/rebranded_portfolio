@@ -15,6 +15,7 @@ const config: Config = {
           '100': '#132D3D'
         },
         'pumpkin': '#FE7F2D',
+        'deepPumpkin': '#f76201',
         'sunglow': '#FCCA46',
         'olivine': '#A1C181',
         'zomp': '#619B8A',

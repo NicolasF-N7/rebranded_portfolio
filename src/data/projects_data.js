@@ -81,7 +81,7 @@ export const portfolio_proj_data = [
 		gist: "Extension chrome agrégeant les prix des annonces d'une recherche sur Le Bon Coin sous format excel",
 		proj_desc: "Cette extension chrome permet d'obtenir des informations d'annonces Le Bon Coin sous un format exploitable. Un cas d'utilisation est de déterminer le prix moyen d'un modèle de moto, pour pouvoir repérer plus facilement les annonces qui ont un prix inférieur au marché.",
 		my_work: "Elle a été faite en pure javascript. Elle viens récupérer les données de Le Bon Coin directement sur la page des résultats d'une recherche par l'utilisateur.",
-		tech_stack: ["Javascript"],
+		tech_stack: ["Javascript", "Chrome extension"],
 		github: "https://github.com/NicolasF-N7/LBC_price_extractor_extension",
 		thumbnail: {
 			src: lbcExtractorThumbnail,

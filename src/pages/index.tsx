@@ -4,12 +4,14 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // Components & sections
+import Page from "@/components/utility/page";
 import Hero from "@/components/services/hero";
 import ServiceSection from "@/components/services/services_section";
 import CallToAction from "@/components/services/call_to_action";
 import Skills from "@/components/services/skills";
 import ProjectsOverview from "@/components/services/projects_overview";
-import Page from "@/components/utility/page";
+import Recommendations from "@/components/services/recommendations";
+
 
 
 
@@ -65,13 +67,13 @@ export default function Home() {
       <div className=" mt-0 sm:mt-24 space-y-32 ">
         {/* First half: Services + CTA */}
         <div className="curvedSeparatorContainer">
-          <div className="customCurvedSeparator h-[150vh] mt-[1800px] md:mt-[1400px] lg:mt-[750px] bg-curvedBackground">
+          <div className="customCurvedSeparator h-[150vh] mt-[1800px] md:mt-[1400px] lg:mt-[750px]">
           </div>
         </div>
         
         <div className="pinnedServicesAndCTA"> 
           <ServiceSection />
-          <CallToAction />
+          <CallToAction headerText="Discutons de vos besoins !" buttonText="Contactez moi" />
         </div>
         
         {/* Second half: Skills + Reco + CTA */}
@@ -79,7 +81,8 @@ export default function Home() {
         <ProjectsOverview />
         
         {/*<Testimonials />*/}
-        {/* <Posts allPosts={allPosts} /> */}
+        <Recommendations />
+        <CallToAction headerText="Décidé cette fois ?" buttonText="Contactez moi" />
       </div>
       {/*<CTA />*/}
     </Page>

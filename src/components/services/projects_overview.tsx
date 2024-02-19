@@ -2,28 +2,18 @@ import React from "react";
 import Link from 'next/link';
 import ProjectCard from '@/components/services/project_card';
 import { portfolio_proj_data } from '@/data/projects_data';
-
+import SectionHeader from "@/components/services/section_header";
 
 function ProjectsOverview() {
 
   return (
     <>
       {/* Section Title */}
-      <div className="">
-        <div className="mb-8 flex flex-col sm:flex-row w-full justify-center">
-          {/* Left separator */}
-          <div className="mt-4 mb-8 mr-4 border-t-4 border-charcoal w-full hidden sm:block"></div>
-          
-          <div className="w-full text-charcoal font-bold text-2xl lg:text-3xl whitespace-nowrap">
-          Quelques projets
-          </div>
-
-          {/* Right separator */}
-          <div className="mt-4 ml-0 sm:ml-4 border-t-4 border-charcoal w-full "></div>
-        </div>
+      <div className="flex flex-col items-center">
+        <SectionHeader headerText="Quelques projets" />
 
         {/* Content */}
-        <div className="flex flex-col lg:flex-row lg:justify-center items-center">
+        <div className="flex flex-col lg:flex-row lg:justify-center items-start mb-12">
           <div className="mb-8 mx-8 lg:mb-0">
             <ProjectCard project={portfolio_proj_data[0]}/>
           </div>
@@ -34,6 +24,15 @@ function ProjectsOverview() {
             <ProjectCard project={portfolio_proj_data[4]}/>
           </div>
         </div>
+
+        {/* More project button */}
+        <div className="growingButton align-center w-[40%]">
+            <Link href="/contact">
+              <div className="mb-8 font-bold px-16 py-6 bg-charcoal border-2 border-white text-white hover:bg-zomp transition-colors">
+                <p>Plus de projets</p>
+              </div>
+            </Link>
+          </div>
 
       </div>
     </>

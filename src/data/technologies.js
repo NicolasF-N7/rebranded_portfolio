@@ -1,9 +1,9 @@
-import react_js_logo from '/public/techno-logos/react-js.png'
-import next_js_logo from '/public/techno-logos/next-js.png'
-import tailwind_css_logo from '/public/techno-logos/tailwind-css.png'
-import framer_motion_logo from '/public/techno-logos/framer-motion.webp'
-import gsap_logo from '/public/techno-logos/gsap-simple.webp'
-import node_js_logo from '/public/techno-logos/nodejs-logo.webp'
+import react_js_logo from '/public/techno_logos/react-js.png'
+import next_js_logo from '/public/techno_logos/next-js.png'
+import tailwind_css_logo from '/public/techno_logos/tailwind-css.png'
+import framer_motion_logo from '/public/techno_logos/framer-motion.webp'
+import gsap_logo from '/public/techno_logos/gsap-simple.webp'
+import node_js_logo from '/public/techno_logos/nodejs-logo.webp'
 
 
 export const technologies_logo = [

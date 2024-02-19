@@ -96,21 +96,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* =============== Home page================ */
-.curvedSection {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center -300px; 
-  background:  theme('colors.charcoal');
-  height: 50vh;
-  border-bottom-left-radius: 50% 37%;
-  border-bottom-right-radius: 50% 37%;
-}
-
 .curvedSeparatorContainer{
   position: relative;
 }
 .customCurvedSeparator{
   position: absolute;
+  background: linear-gradient(to bottom, theme('colors.curvedBackground') 0%, rgba(0, 0, 0, 0) 100%);
   left: -50%;
   width: 200%;
   z-index: -1;
@@ -124,7 +115,15 @@ body::-webkit-scrollbar-thumb {
   right: -100%;
 }
 
-
+/* ====Recommendation==== */
+.swiper-container{
+  height: 100%; 
+  max-height: 100vh;
+  min-height: 0;
+  /* max-width: calc(100vw - 8em); */
+  width: 100%;
+  overflow: hidden;
+}
 
 /*============== vibrating button ==============*/
 /* @keyframes vibrate {
@@ -216,7 +215,14 @@ body::-webkit-scrollbar-thumb {
 
 /*===================Swipers======================*/
 
-/* Portfolio */
+/* Recommendation */
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
 
 
 /* Project slide swiper */
