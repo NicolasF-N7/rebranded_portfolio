@@ -82,7 +82,7 @@ export default function Home() {
         
         {/*<Testimonials />*/}
         <Recommendations />
-        <CallToAction headerText="Décidé cette fois ?" buttonText="Contactez moi" />
+        <CallToAction headerText="Convaincu cette fois ?" buttonText="Contactez moi" />
       </div>
       {/*<CTA />*/}
     </Page>

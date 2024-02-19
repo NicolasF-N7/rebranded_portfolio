@@ -20,7 +20,7 @@ function portfolio() {
       currentPage="Portfolio"
       meta={{ title: "Portfolio", desc: "Mes précédents projets de développement web" }}>
 
-      <h1> mes proj</h1>
+      <h1>Mes projets</h1>
 
       <div className="mt-6 portfolio-swiper-container">
         <div className="scrollHint flex flex-col items-center">
