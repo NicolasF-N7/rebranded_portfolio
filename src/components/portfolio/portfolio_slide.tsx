@@ -15,7 +15,8 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
   return (
       <>
         <div className="flex-col p-4 lg:p-8 pb-0 h-full">
-          <h2 className="text-center text-black font-bold text-xl mb-4">{project_data.title}</h2>
+          {/* Title */}
+          <h2 className="text-center text-black font-bold text-xl mb-4">{project_data.title} - {project_data.project_recipient}</h2>
 
           <div className="flex lg:flex-row flex-col items-center h-[90%] lg:mt-16">
           {/*Screenshots swiper*/}
@@ -54,7 +55,7 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
               {/*Tech stack + github*/}
               <div className="lg:mt-6 flex flex-wrap items-start">
                 {project_data.tech_stack.map((techno, index) => (
-                  <div className="text-xs text-black font-semibold p-2 rounded-md mr-2 mb-2 bg-zomp hover:bg-olivine whitespace-no-wrap">{techno}</div>
+                  <div className="text-xs text-black font-semibold p-2 rounded-md mr-2 mb-2 bg-darkseagreen hover:bg-olivine whitespace-no-wrap">{techno}</div>
                 ))}
 
 

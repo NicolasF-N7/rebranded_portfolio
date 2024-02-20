@@ -15,6 +15,7 @@ const config: Config = {
           '100': '#132D3D'
         },
         'pumpkin': '#FE7F2D',
+        'deepPumpkin': '#f76201',
         'sunglow': '#FCCA46',
         'olivine': '#A1C181',
         'zomp': '#619B8A',
@@ -26,10 +27,16 @@ const config: Config = {
         'zomp-rgb': '97, 155, 138',
 
         'softSunglow': '#fff9cb',
+        'curvedBackground': '#f2b004',
         'softOlivine': '#A1C18161',
         'softZomp': '#619B8A61',
 
         'sunglowBgSection': '#fde18a',
+        'beige': '#f5f5dc',
+        'darkseagreen': '#8fbc8f',
+        'goldenrod': '#DAA520',
+        'lemonchiffon': '#fffacd',
+        'wheat': '#f5deb3',
       }
     },
   },

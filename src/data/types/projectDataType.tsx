@@ -6,11 +6,16 @@ export type StaticImageData = {
 
 export type ProjectDataType = {
   title: string;
+  project_recipient: string;
   gist: string;
   proj_desc: string;
   my_work: string;
   tech_stack: string[];
   github: string;
+  thumbnail: {
+    src: StaticImageData;
+    alt: string;
+  },
   screenshots: {
     src: StaticImageData;
     alt: string;
