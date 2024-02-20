@@ -49,7 +49,6 @@ export default function Home() {
           scrub: 1,
           start: 'top 80%',
           end: 'bottom 30%',
-          markers: true,
         }
       });
     });
