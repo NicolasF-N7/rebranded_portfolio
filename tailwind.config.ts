@@ -32,6 +32,11 @@ const config: Config = {
         'softZomp': '#619B8A61',
 
         'sunglowBgSection': '#fde18a',
+        'beige': '#f5f5dc',
+        'darkseagreen': '#8fbc8f',
+        'goldenrod': '#DAA520',
+        'lemonchiffon': '#fffacd',
+        'wheat': '#f5deb3',
       }
     },
   },

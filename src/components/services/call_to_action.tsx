@@ -19,7 +19,7 @@ function CallToAction({
         <div className="firstCTAButton">
           <div className="hidden lg:block wavyButton">
             <Link href="/contact">
-              <div className="font-bold px-16 py-6 bg-deepPumpkin hover:bg-pumpkin border-2 border-charcoal text-white transition-colors">
+              <div className="font-bold px-16 py-6 bg-deepPumpkin hover:bg-pumpkin border-2 border-white text-white transition-colors">
                 <p>{buttonText}</p>
               </div>
             </Link>

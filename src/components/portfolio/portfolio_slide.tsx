@@ -55,7 +55,7 @@ const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
               {/*Tech stack + github*/}
               <div className="lg:mt-6 flex flex-wrap items-start">
                 {project_data.tech_stack.map((techno, index) => (
-                  <div className="text-xs text-black font-semibold p-2 rounded-md mr-2 mb-2 bg-zomp hover:bg-olivine whitespace-no-wrap">{techno}</div>
+                  <div className="text-xs text-black font-semibold p-2 rounded-md mr-2 mb-2 bg-darkseagreen hover:bg-olivine whitespace-no-wrap">{techno}</div>
                 ))}
 
 

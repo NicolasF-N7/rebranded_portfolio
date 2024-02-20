@@ -106,7 +106,7 @@ export const portfolio_proj_data = [
 		my_work: "Il est basé sur Puppeteer, un module de web scraping en javascript qui émule un navigateur web pour accéder aux données d'un site.",
 		tech_stack: ["Puppeteer"],
 		github: "https://github.com/NicolasF-N7/Brand_popularity_scraper",
-		thumbnail: {},
+		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
 			{
 				src: islaPopularityScraper,
@@ -126,7 +126,7 @@ export const portfolio_proj_data = [
 		my_work: "Il a été fait avec Node-JS et Express. L'interface n'est pas belle - c'est sûr - mais ce qui a été testé avec ce prototype est la fiabilité de la prédiction. ",
 		tech_stack: ["Node-JS", "EJS", "Express"],
 		github: "https://github.com/ISLA-Tech/Marketplace_prices_frontend/tree/main",
-		thumbnail: {},
+		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
 			{
 				src: islaPriceScraper,
@@ -178,7 +178,7 @@ export const portfolio_proj_data = [
 		my_work: "J'ai construit le backend de celle-ci, en utilisant l'API du registrar de nom de domaine GoDaddy. Ce projet a été fait en pure javascript, avec Express",
 		tech_stack: ["Node-JS", "MongoDB", "Express", "EJS", "Web3-JS"],
 		github: "",
-		thumbnail: {},
+		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
 			{
 				src: domainTokMint,
@@ -198,7 +198,7 @@ export const portfolio_proj_data = [
 		my_work: "J'ai construit le backend avec Node-JS et Web3-JS pour se connecter au frontend que j'ai fais en pure javascript avec Express. J'ai également intégré le module de connexion à la plupart des wallet utilisés dans le monde des crypto monnaies",
 		tech_stack: ["Node-JS", "Solidity", "Express", "EJS", "Web3-JS"],
 		github: "",
-		thumbnail: {},
+		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
 			{
 				src: mintWallet,
@@ -218,7 +218,7 @@ export const portfolio_proj_data = [
 		my_work: "J'ai créé cette application web avec Express sous Node-JS. L'interface est faite avec le moteur de template EJS, et en javascript pure, HTML & CSS.",
 		tech_stack: ["Node-JS", "MongoDB", "Solidity", "Web3-JS", "Express", "EJS"],
 		github: "https://github.com/NicolasF-N7/Nexchange",
-		thumbnail: {},
+		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
 			{
 				src: nexchangeHomepage,

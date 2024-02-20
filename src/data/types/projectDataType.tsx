@@ -12,7 +12,10 @@ export type ProjectDataType = {
   my_work: string;
   tech_stack: string[];
   github: string;
-  thumbnail: StaticImageData,
+  thumbnail: {
+    src: StaticImageData;
+    alt: string;
+  },
   screenshots: {
     src: StaticImageData;
     alt: string;

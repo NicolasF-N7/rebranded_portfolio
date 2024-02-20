@@ -13,7 +13,7 @@ function Skills() {
         {/* Desktop */}
         <div className="skillWrapper ml-2 w-[150%] hidden md:flex flex-row justify-between">
           {technologies_logo.map((techno, index) => (
-            <div className="p-3 sm:p-8 rounded-full bg-white ml-4 mr-4 h-[5em] w-[5em] sm:h-[10em] sm:w-[10em] flex-shrink-0 flex items-center">
+            <div className="p-3 sm:p-8 rounded-full border-2 border-goldenrod bg-white ml-4 mr-4 h-[5em] w-[5em] sm:h-[10em] sm:w-[10em] flex-shrink-0 flex items-center">
               <Image
                 className=""
                 height="128"
