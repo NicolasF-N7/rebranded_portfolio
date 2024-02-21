@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
-import { StaggerVars } from 'gsap';
 
 interface RotatingTextCubeProps {
   texts: string[];
