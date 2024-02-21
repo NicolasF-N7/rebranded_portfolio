@@ -12,10 +12,6 @@ import Skills from "@/components/services/skills";
 import ProjectsOverview from "@/components/services/projects_overview";
 import Recommendations from "@/components/services/recommendations";
 
-
-
-
-
 export default function Home() {
   useEffect(() => {
     // Calculus for technologies scroll distance
@@ -34,6 +30,7 @@ export default function Home() {
 
 
       const t1 = gsap.timeline();
+      // Scroll lock after CTA
       t1.to(".firstCTAButton", {
         scrollTrigger: {
           trigger: ".firstCTAButton",
@@ -41,7 +38,7 @@ export default function Home() {
           start: "bottom bottom",
           end: "+=900",
         }
-      })// Create timeline, when pin finish: .to horiz scroll
+      })// Create timeline, when pin finish: techno horiz scroll
       .to(".skillWrapper", {
         x: -technoScrollAmount,
         scrollTrigger: {

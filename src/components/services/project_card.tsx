@@ -14,7 +14,7 @@ let thumbnailImageAlt = project.thumbnail.alt;
       {project.github ? (
         /* Project github link on image thumbnail */
         <Link
-          href={project.github}
+          href={project.live_preview ? project.live_preview : project.github}
           target="_blank"
           className={`w-full rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-charcoal`}>
           <Image
@@ -36,11 +36,19 @@ let thumbnailImageAlt = project.thumbnail.alt;
         {/* Project title */}
         <div className="flex justify-between">
 
-          {project.github ? (
+          {project.live_preview && (
+            <a href={project.live_preview} target="_blank">
+              <h3 className="text-lg text-black font-bold">{project.title}</h3>
+            </a>
+          )}
+          
+          {!project.live_preview && project.github && (
             <a href={project.github} target="_blank">
               <h3 className="text-lg text-black font-bold">{project.title}</h3>
             </a>
-          ) : (
+          )}
+          
+          {!project.live_preview && !project.github && (
             <h3 className="text-lg text-black font-bold">{project.title}</h3>
           )}
         </div>

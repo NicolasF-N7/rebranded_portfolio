@@ -320,3 +320,18 @@ body::-webkit-scrollbar-thumb {
 .menu > * + * {
   margin-top: 24px;
 }
+
+/* ===== Rotating text cube ===== */
+
+.rotatingHeader {
+	width:fit-content;
+	white-space:nowrap;
+
+}
+
+.rotatingHeaderText{
+	margin:0;
+	padding:0;
+	line-height:0.2;
+	perspective:600px;
+}
