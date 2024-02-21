@@ -9,10 +9,14 @@ function Hero() {
         style={{ maxWidth: "1200px" }}
       >
         <p className="text-xl mb-5">Je suis Nicolas Foin,</p>
-        <RotatingTextCube texts={["entreprise", "commerce", 'startup']}/>
-        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
+        
+        <h1 className="leading-[1.5] heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
           Je crée des <span className="heroShiny1 text-charcoal">sites web</span> pour votre{" "}
-          <span className="heroShiny2 text-charcoal">entreprise</span>.
+          <span className="heroShiny2 text-charcoal"><RotatingTextCube texts={["entreprise", "commerce", 'startup']}/></span>.
+          
+
+
+          {/* Background images */}
           <img
             className="sqD w-16 top-[-45%] right-[20%] sm:top-[-90px] sm:right-[20%] opacity-40"
             style={{ animationDelay: "0.1s"}}
