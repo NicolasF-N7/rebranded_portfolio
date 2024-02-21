@@ -11,6 +11,7 @@ export type ProjectDataType = {
   proj_desc: string;
   my_work: string;
   tech_stack: string[];
+  live_preview: string,
   github: string;
   thumbnail: {
     src: StaticImageData;

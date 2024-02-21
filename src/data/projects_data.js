@@ -59,6 +59,7 @@ export const portfolio_proj_data = [
 		proj_desc: "L'objectif de ce site était d'appuyer la communication de ce festival en plus de ce qui a été fait sur les réseaux sociaux et auprès d'écoles partenaire de l'association qui organise ce festival.",
 		my_work: "J'ai fais ce site de présentation avec Wordpress et Elementor, l'un des éditeurs de thème les plus connus.",
 		tech_stack: ["Wordpress", "Elementor"],
+		live_preview: "",
 		github: "",
 		thumbnail: {
 			src: hestauThumbnail,
@@ -82,6 +83,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Cette extension chrome permet d'obtenir des informations d'annonces Le Bon Coin sous un format exploitable. Un cas d'utilisation est de déterminer le prix moyen d'un modèle de moto, pour pouvoir repérer plus facilement les annonces qui ont un prix inférieur au marché.",
 		my_work: "Elle a été faite en pure javascript. Elle viens récupérer les données de Le Bon Coin directement sur la page des résultats d'une recherche par l'utilisateur.",
 		tech_stack: ["Javascript", "Chrome extension"],
+		live_preview: "",
 		github: "https://github.com/NicolasF-N7/LBC_price_extractor_extension",
 		thumbnail: {
 			src: lbcExtractorThumbnail,
@@ -105,6 +107,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Ce script est un agrégateur de données comptabilisant le nombre d'objets de différentes marques en ciculation sur le maché de la seconde main. Cela avait pour objectif de donner une mesure de la popularité d'une marque.",
 		my_work: "Il est basé sur Puppeteer, un module de web scraping en javascript qui émule un navigateur web pour accéder aux données d'un site.",
 		tech_stack: ["Puppeteer"],
+		live_preview: "",
 		github: "https://github.com/NicolasF-N7/Brand_popularity_scraper",
 		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
@@ -125,6 +128,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Ce projet est un prototype qui avait pour but de récupérer les prix des vêtements de seconde main dans l'objectif d'établir une suggestion de prix pour simplifier le processus de publication d'annonce et de vente. ",
 		my_work: "Il a été fait avec Node-JS et Express. L'interface n'est pas belle - c'est sûr - mais ce qui a été testé avec ce prototype est la fiabilité de la prédiction. ",
 		tech_stack: ["Node-JS", "EJS", "Express"],
+		live_preview: "",
 		github: "https://github.com/ISLA-Tech/Marketplace_prices_frontend/tree/main",
 		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
@@ -146,6 +150,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Ce projet a pour objectif d'agir comme un système sécurisé de transfert de NFT (un titre de propriété) entre plusieurs blockchains indépendantes.",
 		my_work: "J'ai créé le frontend de cette application web en pure javascript, HTML & CSS à partir des maquettes fournies par l'équipe de design. Je l'ai connecté à l'API du backend ainsi qu'aux différentes blockchains en utilisant le module Web3-JS.",
 		tech_stack: ["Node-JS", "Solidity", "Express", "Web3-JS"],
+		live_preview: "https://bridge.mynft.com/home",
 		github: "https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge",
 		thumbnail: {
 			src: mynftBridgeThumbnail,
@@ -177,6 +182,7 @@ export const portfolio_proj_data = [
 		proj_desc: "L'objectif de cette preuve de concept est de faciliter la circulation des noms de domaines du web classique en utilisant des NFT pour les représenter. C'est-à-dire en remplaçant la longue procédure de transfert d'un registrar à un autre par un simple transfert de NFT.",
 		my_work: "J'ai construit le backend de celle-ci, en utilisant l'API du registrar de nom de domaine GoDaddy. Ce projet a été fait en pure javascript, avec Express",
 		tech_stack: ["Node-JS", "MongoDB", "Express", "EJS", "Web3-JS"],
+		live_preview: "",
 		github: "",
 		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
@@ -197,6 +203,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Ce micro-service permet la création de NFT à partir d'une interface graphique, et en associant les métadonnées fournies par l'utilisateur à son nouveau NFT.",
 		my_work: "J'ai construit le backend avec Node-JS et Web3-JS pour se connecter au frontend que j'ai fais en pure javascript avec Express. J'ai également intégré le module de connexion à la plupart des wallet utilisés dans le monde des crypto monnaies",
 		tech_stack: ["Node-JS", "Solidity", "Express", "EJS", "Web3-JS"],
+		live_preview: "",
 		github: "",
 		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
@@ -217,6 +224,7 @@ export const portfolio_proj_data = [
 		proj_desc: "Ce site d'échange de NFT était un projet pour découvrir les technologies du Web3 et des NFT. J'ai appliqué ceci à la gestion locative d'appareil électroménager.",
 		my_work: "J'ai créé cette application web avec Express sous Node-JS. L'interface est faite avec le moteur de template EJS, et en javascript pure, HTML & CSS.",
 		tech_stack: ["Node-JS", "MongoDB", "Solidity", "Web3-JS", "Express", "EJS"],
+		live_preview: "",
 		github: "https://github.com/NicolasF-N7/Nexchange",
 		thumbnail: {src: {src: "", width: 0, height: 0},alt: ""},
 		screenshots: [
