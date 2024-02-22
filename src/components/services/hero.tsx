@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import RotatingTextCube from "@/components/services/rotating_text_cube";
-import profilePicture from '/public/photos_nicolas/transparent-closecut-1080-light.png'
+import profilePicture from '/public/photos_nicolas/transparent-closecut-1080-light.webp'
 
 function Hero() {
   return (
@@ -53,7 +53,7 @@ function Hero() {
         {/* Profile picture */}
         <div className="flex justify-center md:mb-[10em]">
           <Image
-              className=" sqD w-[50%] md:w-[35%] rounded-md"
+              className=" sqD w-[60%] md:w-[35%] rounded-md"
               src={profilePicture}
               alt="Nicolas Profile picture"/>
         </div>
