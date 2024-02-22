@@ -66,8 +66,8 @@ function Footer() {
               </span>
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  width="26"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                  width="100"
                   title="TailwindCSS"/>
 
                 <span className="sr-only">TailwindCSS</span>

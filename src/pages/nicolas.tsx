@@ -118,14 +118,14 @@ function nicolas() {
       </div>
       
       
-      <div className="mx-[3%] sm:mx-[10%] my-4 text-left">
+      <div className="mx-[3%] sm:mx-[10%] my-4">
         {/* First section */}
         <div className="p-8 text-black flex flex-col items-center bg-beige border-2 rounded-lg border-goldenrod">
-          <h2 className="text-2xl text-charcoal font-bold ">Parcour académique</h2>
+          <h2 className="text-2xl text-charcoal font-bold ">Parcours académique</h2>
           <div className="mt-2 mb-8 h-[1em] w-[50%] border-t-2 border-goldenrod"></div>
 
           <div>
-            <p>Je suis un passionné d'informatique depuis <span className="font-bold">mon plus jeune âge</span>. 
+            <p className="text-justify">Je suis un passionné d'informatique depuis <span className="font-bold">mon plus jeune âge</span>. 
             Au collège, je m'amusais déjà à faire des pièges en écrivant des messages drôles sur les ordinateurs des personnes de mon entourage.</p>
               
             <div className="flex justify-center md:justify-end items-center">
@@ -139,7 +139,7 @@ function nicolas() {
             
             <br/>
             <div className="mt-8 flex flex-col md:flex-row justify-between">
-              <p>Plus sérieusement... C'est lorsque j'ai compris que l'on pouvait faire bien plus que cela avec l'informatique, 
+              <p className="text-justify">Plus sérieusement... C'est lorsque j'ai compris que l'on pouvait faire bien plus que cela avec l'informatique, 
               j'ai décidé d'entreprendre des études d'<span className="font-bold">ingénieur</span> en logiciel et développement web à l'Enseeiht, à Toulouse à la sortie de ma classe préparatoire maths spé.</p>
 
                 <Image
@@ -150,7 +150,7 @@ function nicolas() {
                 alt="Logo of the Enseeiht engineering school"/>
             </div>
             <br />
-            <p>J'ai découvert la puissance de l'informatique pour <span className="font-bold">la visibilité en ligne des entreprises</span> et pour <span className="font-bold">tester rapidement une idée de produit</span> au cours de plusieurs expériences en startups à différent stages de développement dans plusieurs pays.</p>
+            <p className="text-justify">J'ai découvert la puissance de l'informatique pour <span className="font-bold">la visibilité en ligne des entreprises</span> et pour <span className="font-bold">tester rapidement une idée de produit</span> au cours de plusieurs expériences en startups à différent stages de développement dans plusieurs pays.</p>
           </div>
         </div>
 
@@ -168,7 +168,7 @@ function nicolas() {
 
           <div className="md:max-w-[60%]">
             {/*Colors darseagreen goldenrod lemonchiffon wheat beige*/}
-            <div className="p-8 text-black text-left flex flex-col items-center bg-beige border-2 rounded-lg border-goldenrod">
+            <div className="p-8 text-black flex flex-col items-center bg-beige border-2 rounded-lg border-goldenrod">
               <h2 className="text-2xl text-charcoal font-bold">Expériences</h2>
               <div className="mt-2 mb-8 h-[1em] w-[50%] border-t-2 border-goldenrod"></div>
 
@@ -181,7 +181,7 @@ function nicolas() {
                 src={MyNFTLogo}
                 alt="Logo of MyNFT"/>
               </div>
-              <p>À travers mon expérience, j'ai entre autres développé mon-savoir faire en développement web en travaillant sur des projets innovants, notamment chez <Link className="text-charcoal underline italic" target="_blank" href="https://mynft.com/">MyNFT</Link> en participant à l'élaboration d'un site d'échange de NFT et plusieurs produits associés.</p>
+              <p className="text-justify">À travers mon expérience, j'ai entre autres développé mon-savoir faire en développement web en travaillant sur des projets innovants, notamment chez <Link className="text-charcoal underline italic" target="_blank" href="https://mynft.com/">MyNFT</Link> en participant à l'élaboration d'un site d'échange de NFT et plusieurs produits associés.</p>
               <br/>
 
               <div className="flex w-full justify-start items-center oly-img-container">
@@ -192,7 +192,7 @@ function nicolas() {
                 src={OlyLogo}
                 alt="Logo of Oly platform"/>
               </div>
-              <p>Puis chez <Link className="text-charcoal underline italic" target="_blank" href="https://www.oly-platform.com/">Oly</Link> en prototypant un agrégateur de données pour leur logiciel de multi-listing de vêtements de seconde main.</p>
+              <p className="text-justify">Puis chez <Link className="text-charcoal underline italic" target="_blank" href="https://www.oly-platform.com/">Oly</Link> en prototypant un agrégateur de données pour leur logiciel de multi-listing de vêtements de seconde main.</p>
               <br/>
               
               <div className="flex w-full justify-start items-center protenga-img-container">
@@ -203,7 +203,7 @@ function nicolas() {
                 src={ProtengaLogo}
                 alt="Logo of Protenga"/>
               </div>
-              <p>Et également chez <Link className="text-charcoal underline italic" target="_blank" href="https://www.protenga.com/">Protenga</Link>, qui crée des fermes d'élevage d'insectes high tech, en améliorant un système de comptage d'insectes.</p>
+              <p className="text-justify">Et également chez <Link className="text-charcoal underline italic" target="_blank" href="https://www.protenga.com/">Protenga</Link>, qui crée des fermes d'élevage d'insectes high tech, en améliorant un système de comptage d'insectes.</p>
 
             </div>
           </div>
@@ -215,10 +215,10 @@ function nicolas() {
           <div className="mt-2 mb-8 h-[1em] w-[50%] border-t-2 border-goldenrod"></div>
 
           <div>
-            <p>Ma <span className="font-bold">recherche de sens</span> dans mon travail, m'a amené à travailler pour Oly et Protenga. Et c'est cette envie d'avoir un impact social et écologique positif qui m'anime pour travailler avec mes clients.</p>
+            <p className="text-justify">Ma <span className="font-bold">recherche de sens</span> dans mon travail, m'a amené à travailler pour Oly et Protenga. Et c'est cette envie d'avoir un impact social et écologique positif qui m'anime pour travailler avec mes clients.</p>
             <br />
 
-            <p>Mon esprit entrepreneurial m'a mené à m'installer en tant que freelance pour avoir un réel <span className="font-bold">contact avec les clients</span> qui me manquait dans mes expériences professionelles, mais aussi de mettre à profit mes compétences techniques poussées au service d'autres entrepreneurs et de personnes avec le même état d'esprit que moi.</p>
+            <p className="text-justify">Mon esprit entrepreneurial m'a mené à m'installer en tant que freelance pour avoir un réel <span className="font-bold">contact avec les clients</span> qui me manquait dans mes expériences professionelles, mais aussi de mettre à profit mes compétences techniques poussées au service d'autres entrepreneurs et de personnes avec le même état d'esprit que moi.</p>
           </div>
         </div>
 
