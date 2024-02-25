@@ -7,7 +7,8 @@ interface RotatingTextCubeProps {
 
 const RotatingTextCube: React.FC<RotatingTextCubeProps> = ({ texts }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  // BABY STEPS, Make it simple
+  const textsMaxCharLength = texts.reduce((max, text) => Math.max(max, text.length), 0);
+  
   useEffect(() => {
     const textElements = document.querySelectorAll('.rotatingHeaderText') as NodeListOf<HTMLElement>;
 
@@ -44,7 +45,7 @@ const RotatingTextCube: React.FC<RotatingTextCubeProps> = ({ texts }) => {
 
   return (
     <div className="inline-block rotatingHeader">
-      <h1 className="rotatingHeaderText">{texts[currentTextIndex]}</h1>
+      <h1 className="text-left rotatingHeaderText" style={{ width: `${textsMaxCharLength}ch` }}>{texts[currentTextIndex]}</h1>
     </div>
   );
 };
