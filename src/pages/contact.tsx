@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Page from "@/components/utility/page";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import { IoIosMail } from "react-icons/io";
 import WhatsappLogo from "/public/logos/whatsapp.png";
 
 function contact() {
+
   return (
     <Page
       currentPage="Contact"
@@ -17,8 +18,9 @@ function contact() {
           <div className="mt-8 text-white flex flex-row items-center justify-center">
             {/* Email */}
             <div className="w-[25%] mr-[15%]">
+              
               <Link
-                href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#102;&#111;&#105;&#110;&#045;&#100;&#101;&#118;&#045;&#119;&#101;&#098;&#046;&#102;&#114;" target="_blank" rel="noopener noreferrer">
+                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#105;&#99;&#111;&#108;&#97;&#115;&#64;&#102;&#111;&#105;&#110;&#45;&#100;&#101;&#118;&#45;&#119;&#101;&#98;&#46;&#102;&#114;" target="_blank" rel="noopener noreferrer">
                   <IoIosMail size="100%"/>
                </Link>
             </div>

@@ -84,9 +84,15 @@ export const footer_columns = [
         },
         {
           name: "Email",
-          link: "mailto:contact@foin-dev-web.fr",
+          link: "/contact",
           icon: "/icons/mail-f.svg",
-          leavesWebsite: true,
+          leavesWebsite: false,
+        },
+        {
+          name: "Whatsapp",
+          link: "/contact",
+          icon: "/icons/whatsapp-f.svg",
+          leavesWebsite: false,
         },
       ],
     },

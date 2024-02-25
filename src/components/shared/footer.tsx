@@ -17,10 +17,9 @@ function Footer() {
                 {item.links.map((item, index) => {
                   return (
                     <div key={index} className="my-4">
-                      {item.leavesWebsite ? (
-                        <Link
+                      <Link
                           href={item.link}
-                          target="_blank"
+                          target={item.leavesWebsite ? "_blank" : undefined}
                           className="items-center flex">
 
                           {item.icon && (
@@ -30,9 +29,6 @@ function Footer() {
                           )}
                           {item.name}
                         </Link>
-                      ) : (
-                        <Link href={item.link}>{item.name}</Link>
-                      )}
                     </div>
                   );
                 })}
