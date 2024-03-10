@@ -1,20 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Zoom, A11y } from 'swiper/modules';
 import github_logo from '/public/icons/github-f.svg'
 import type {ProjectDataType} from '@/data/types/projectDataType';
+import { PiHandSwipeLeftBold } from "react-icons/pi";// horizontal scroll icon as hint for user
+import gsap from 'gsap';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const PortfolioSlide = ({project_data} : {project_data: ProjectDataType}) => {
+const PortfolioSlide = ({project_data, showSwipeHint} : {project_data: ProjectDataType, showSwipeHint: boolean}) => {
+  const iconRef = useRef(null);
+
+  useEffect(() => {
+    // Check if showSwipeHint has become false
+    if (!showSwipeHint) {
+      gsap.to(iconRef.current, { // Target the element using the reference
+        duration: 0.3, // Adjust duration (seconds)
+        opacity: 0, // Animate opacity to 0 for fade-out
+        height: 0,
+        ease: "power2.out", // Adjust easing function (optional)
+        onComplete: () => {
+          // Optional actions after animation completes (e.g., hiding the element)
+        }
+      });
+    }
+  }, [showSwipeHint]);
+
   return (
       <>
         <div className="flex-col p-4 lg:p-8 pb-0 h-full">
+          <div ref={iconRef} className={`${showSwipeHint ? '' : ''} scrollHint flex flex-col items-center text-deepPumpkin`}>
+            <PiHandSwipeLeftBold size="2em"/>
+          </div>
+
           {/* Title */}
           <h2 className="text-center text-black font-bold text-xl mb-4">{project_data.title} - {project_data.project_recipient}</h2>
 

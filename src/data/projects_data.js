@@ -56,7 +56,7 @@ export const portfolio_proj_data = [
 		title: "Site vitrine",
 		project_recipient: "Hestau",
 		gist: "Site de présentation du festival de musique pour améliorer sa visibilité en ligne.",
-		proj_desc: "L'objectif de ce site était d'appuyer la communication de ce festival en plus de ce qui a été fait sur les réseaux sociaux et auprès d'écoles partenaire de l'association qui organise ce festival.",
+		proj_desc: "L'objectif de ce site était d'appuyer la communication de ce festival en complément des réseaux sociaux en ciblant un public extérieur aux étudiants des universités partenaires.",
 		my_work: "J'ai fais ce site de présentation avec Wordpress et Elementor, l'un des éditeurs de thème les plus connus.",
 		tech_stack: ["Wordpress", "Elementor"],
 		live_preview: "",

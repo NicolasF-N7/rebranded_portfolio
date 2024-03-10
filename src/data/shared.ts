@@ -27,7 +27,7 @@ export const routes: Route[] = [
     path: "/portfolio",
   },
   {
-    title: "Nicolas",
+    title: "Me connaitre",
     path: "/nicolas",
   },
   {
@@ -54,7 +54,7 @@ export const footer_columns = [
           leavesWebsite: false,
         },
         {
-          name: "Nicolas",
+          name: "Me connaitre",
           link: "/nicolas",
           icon: "",
           leavesWebsite: false,

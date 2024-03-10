@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Page from "@/components/utility/page";
 import { portfolio_proj_data } from '@/data/projects_data'
 
 import PortfolioSlide from '@/components/portfolio/portfolio_slide'
-import { PiHandSwipeLeftBold } from "react-icons/pi";// horizontal scroll icon as hint for user
 
 import { Swiper, SwiperSlide, SwiperRef, SwiperClass } from 'swiper/react';
 import SwiperCore, { FreeMode, Navigation, Pagination, A11y, Mousewheel, EffectCreative } from 'swiper/modules';
@@ -15,6 +14,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-creative';
 
 function portfolio() {
+  const [showSwipeHint, setShowSwipeHint] = useState(true);
+
   return (
     <Page
       currentPage="Portfolio"
@@ -23,9 +24,7 @@ function portfolio() {
       <h1>Mes projets</h1>
 
       <div className="mt-6 portfolio-swiper-container">
-        <div className="scrollHint flex flex-col items-center">
-          <PiHandSwipeLeftBold size="2em"/>
-        </div>
+       
 
         <Swiper
           hidden={true}
@@ -35,6 +34,7 @@ function portfolio() {
             grabCursor={true}
             slidesPerView={1}
             direction='horizontal'
+            onSliderFirstMove={(swiper, event) => setShowSwipeHint(false)}
             mousewheel={{
               forceToAxis: true,
               sensitivity: 0.5
@@ -64,7 +64,7 @@ function portfolio() {
             {portfolio_proj_data.map((project, index) => (
               <SwiperSlide className="bg-project-slide-bg rounded portfolio-slides min-h-[60vh]" key={`portfolio-project-${index}`}>
                 <div className="my-auto h-full">
-                  <PortfolioSlide project_data={project} />
+                  <PortfolioSlide project_data={project} showSwipeHint={showSwipeHint} />
                 </div>
               </SwiperSlide>
             ))}

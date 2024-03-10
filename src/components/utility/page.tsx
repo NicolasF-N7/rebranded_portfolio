@@ -61,7 +61,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <div className="hidden sm:block z-100">
           <Navbar currentPage={currentPage} />
         </div>
-        <div className="-m-5 block sm:hidden z-100">
+        <div className="-m-5 mb-0  block sm:hidden z-100">
           <MobileNavbar />
         </div>
         {children}
