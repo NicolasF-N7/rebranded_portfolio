@@ -326,10 +326,9 @@ body::-webkit-scrollbar-thumb {
 .rotatingHeader {
 	width:fit-content;
 	white-space:nowrap;
-
 }
 
-.rotatingHeaderText{
+.rotatingHeader h1{
 	margin:0;
 	padding:0;
 	line-height:0.2;
