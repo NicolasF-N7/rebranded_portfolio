@@ -12,7 +12,7 @@ import MyNFTLogo from "/public/logos/mynft.png";
 import OlyLogo from "/public/logos/oly.png";
 import ProtengaLogo from "/public/logos/protenga.webp";
 import Prank from "/public/other/prank.webp";
-import NicolasNature from "/public/photos_nicolas/nicolas-nature.webp";
+import NicolasNature from "/public/photos_nicolas/nicolas-nature-sunlight.webp";
 
 function nicolas() {
   useEffect(() => {
